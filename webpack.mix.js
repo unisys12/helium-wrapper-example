@@ -19,4 +19,8 @@ mix.js("resources/js/app.js", "public/js").postCss(
     ]
 );
 
+// Disable Notifictions
 mix.disableNotifications();
+
+// Envable BrowserSync for browser reloading
+mix.browserSync("helium-test.test");
