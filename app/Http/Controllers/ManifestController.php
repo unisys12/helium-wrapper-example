@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Helium\ApiWrapper\Api\Request;
-use Helium\ApiWrapper\Api\Response;
-use Illuminate\Contracts\View\View;
 
 class ManifestController extends Controller
 {
@@ -23,7 +21,7 @@ class ManifestController extends Controller
             }
         }
 
-        return View('manifest', ['manifest' => $data]);
+        return view('manifest', ['manifest' => $data]);
     }
 
     /**
