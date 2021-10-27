@@ -1,37 +1,43 @@
-/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+/* @import 'reset.css'; */
 
-/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-    all: unset;
-    display: revert;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 2rem;
+    padding-top: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: auto 1fr auto;
 }
 
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-/* Remove list styles (bullets/numbers) */
-ol, ul {
-    list-style: none;
+main {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
 }
 
-/* For images to not be able to exceed their container */
-img {
-    max-width: 100%;
+main > ul > li {
+    padding: .5rem 0;
 }
 
-/* removes spacing between cells in tables */
-table {
-    border-collapse: collapse;
+main > ul > li > h2 {
+    font-weight: 400;
 }
 
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-    white-space: revert;
+nav > ul > li {
+    padding: .5rem 0;
 }
 
+.card {
+    background-color: aliceblue;
+    padding: .5rem;
+    margin: 1rem 0;
+}
 
+footer {
+
+}
 
