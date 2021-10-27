@@ -1,12 +1,5 @@
 <x-layout>
-    <header>
-        @foreach ($manifest as $data)
-            <sub>{{ $data->version }}</sub>
-        @endforeach
-        <p>{{ count((array)$data) }} root properties</p>
-        <br>
-    </header>
-    <main>
+    <section class="card">
         <header>
             <h2>jsonWorldComponentContentPaths</h2>
         </header>
@@ -15,4 +8,5 @@
             <sub>{{ count((array)$data->jsonWorldComponentContentPaths->en) }} properties</sub>
             @endforeach
         </div>
+    </section>
 </x-layout>
