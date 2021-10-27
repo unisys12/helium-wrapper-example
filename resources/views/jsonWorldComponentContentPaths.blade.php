@@ -5,7 +5,7 @@
         @php
             $table = explode("/", $value);
         @endphp
-            <li><code>{{ $key }}</code> - <a href={{ route('json.content', ['lang' => $table[4], 'table' => $table[5]]) }}>{{ $value }}</a></li>
+            <li><h2>{{ $key }}</h2> - <a href={{ route('json.content', ['lang' => $table[4], 'table' => $table[5]]) }}>{{ $value }}</a></li>
         @endforeach
         </ul>
     @endforeach

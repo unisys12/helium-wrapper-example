@@ -3,7 +3,9 @@
         <h1>D2 Manifest</h1>
     </div>
     <nav>
-        <a href="/manifest">Manifest</a>
-        <a href="/manifest/jsonWorldComponentContentPaths">Json Component Paths</a>
+        <ul>
+            <li><a href="/manifest">Manifest</a></li>
+            <li><a href="/manifest/jsonWorldComponentContentPaths">Json Component Paths</a></li>
+        </ul>
     </nav>
 </header>

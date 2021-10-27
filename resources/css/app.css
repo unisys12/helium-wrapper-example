@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 2rem;
+    padding-top: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+main > ul > li {
+    padding: .5rem 0;
+}
+
+main > ul > li > h2 {
+    font-weight: 400;
+}
+
+nav > ul > li {
+    padding: .5rem 0;
+}
+
+.card {
+    background-color: aliceblue;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+footer {
+
+}
