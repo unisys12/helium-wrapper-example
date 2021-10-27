@@ -8,8 +8,19 @@
     <title>D2 Manifest</title>
 </head>
 <body>
-    <x-site-header-component/>
+    {{-- <x-site-header-component/> --}}
+    <header>
+        <div class="site-title">
+            <h1>D2 Manifest</h1>
+        </div>
+    </header>
     <main>
+    <nav>
+        <ul>
+            <li><a href="/manifest">Manifest</a></li>
+            <li><a href="/manifest/jsonWorldComponentContentPaths">Json Component Paths</a></li>
+        </ul>
+    </nav>
         {{ $slot }}
     </main>
     <footer>
